@@ -1,0 +1,58 @@
+body {
+  margin-top: 1em;
+}
+
+p {
+  margin-bottom: 1em;
+}
+
+footer {
+  border-top: #bbb 1px solid;
+}
+
+footer p {
+  margin-top: 0.67em;
+  font-weight: bold;
+  color: #bbb;
+}
+
+#header-row h1 {
+  font-size: 1.67em;
+  font-weight: bold;
+}
+
+#info-column h2 {
+  font-size: 1.33em;
+  font-weight: bold;
+}
+
+#submit-btn {
+  font-size: 1.4rem;
+  height: 4.5rem;
+  line-height: 4.5rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+#img-preview {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 50%;
+}
+
+#footer-logo p {
+  text-align: center;
+}
+
+#footer-logo img {
+  width: 1.33em;
+}
+
+@media (min-width: 40rem) {
+  #footer-logo p {
+    text-align: right;
+  }
+}

@@ -1,0 +1,78 @@
+<!--    discord-spoiler-tagger - (c) 2021 xtal.sh    -->
+<!-- Licensed under the MIT License. See LICENSE.txt -->
+<!doctype html>
+
+<html class="no-js" lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discord Image Spoiler Tagger - xtal.sh</title>
+  <meta name="author" content="xtal.sh" />
+  <meta name="description" content="Need to upload an image to Discord as a spoiler on mobile? Too lazy to rename the file? Let me do the job for you!">
+
+  <link rel="icon" type="image/vnd.microsoft.icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="img/spoiler-tagger-icon-16.png" sizes="16x16">
+  <link rel="icon" type="image/png" href="img/spoiler-tagger-icon-32.png" sizes="32x32">
+  <link rel="icon" type="image/png" href="img/spoiler-tagger-icon-96.png" sizes="96x96">
+
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/vendor/milligram.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <header id="header-row" class="row">
+        <div class="column">
+          <h1>Discord Image Spoiler Tagger</h1>
+        </div>
+      </header>
+      <main class="row">
+        <div class="column">
+          <form name="main-form" id="main-form" enctype="multipart/form-data">
+            <label for="imgfile">Select image from device:</label>
+            <input type="file" name="img-file" id="img-file" autocomplete="off"/><br>
+            <div id="img-preview-container" style="display: none;">
+              <label>Image Preview:</label>
+              <img id="img-preview">
+            </div>
+            <button id="submit-btn" type="button" onclick="markAsSpoilers()" disabled>Mark As Spoilers</button>
+          </form>
+        </div>
+        <div class="column">
+          <p>Need to upload an image to Discord as a spoiler on mobile? Too lazy to rename the file?</p>
+          <p>Let me do the job for you! Upload your image, and click the big "Mark As Spoilers" button.</p>
+          <p>When successful, a new image should be downloaded to your device with the correct naming, allowing you to upload the image as a spoiler on Discord for mobile. ✨</p>
+        </div>
+      </main>
+      <div class="row">
+        <div id="info-column" class="column">
+          <h2>Why?</h2>
+          <p>I made this simple tool because I'm too lazy to deal with this on mobile the manual way. 🤷</p>
+          <p>For the longest time, marking an image as a spoiler on Discord for mobile hasn't been (and as of April 2021, still isn't) a possibility in the app itself.</p>
+          <p>Instead, you need to manually rename an image to include the text <code>SPOILER_</code> at the beginning of the file name. Compared to desktop/laptop systems, this can be a slow/annoying process on a lot of mobile devices, such as smartphones or tablets.</p>
+          <h2>Privacy</h2>
+          <p>All data submitted using the form above is stored locally on your device. All data processing takes place locally on your device, and is not uploaded to any server. We do not collect any personally-identifiable data in any form whatsoever.</p>
+        </div>
+      </div>
+      <footer id="footer-row" class="row">
+        <div class="column column-90">
+          <p><small>Copyright &copy; <script>document.write(new Date().getFullYear());</script>, xtal.sh - All rights reserved. ❤️ <a href="./LICENSE.txt">License</a></small></p>
+        </div>
+        <div class="column" id="footer-logo">
+          <p><a href="https://xtal.sh"><img src="img/xtal-logo-footer.png" alt="xtal.sh"></a></p>
+        </div>
+      </footer>
+    </div>
+  </div>
+  
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
